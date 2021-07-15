@@ -1,4 +1,4 @@
-const secretNum = Math.trunc(Math.random() * 20) + 1;
+let secretNum = Math.trunc(Math.random() * 20) + 1;
 let currentScore = 20;
 let highScore = 0;
 
@@ -48,5 +48,6 @@ document.querySelector('.again').addEventListener('click', () => {
     document.querySelector('.number').textContent = '?';
     document.querySelector('body').style.backgroundColor = "black";
     currentScore = 20;
+    secretNum = Math.trunc(Math.random() * 20) + 1;
 });
 
