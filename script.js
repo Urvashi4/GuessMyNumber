@@ -6,7 +6,9 @@ document.querySelector('.check').addEventListener('click', () => {
     let guessNum = Number(document.querySelector('.guess').value);
 
     if (!guessNum) {//not entered a number
-        document.querySelector('.message').textContent = "Please guess a number!";
+        document.querySelector('.message').textContent = "😕 Please guess a number!";
+    } else if (guessNum > 20) {
+        document.querySelector('.message').textContent = "🚫 Number Should be between 1 and 20";
     } else if (guessNum === secretNum) {//correct guess
         document.querySelector('.message').textContent = "✔️ Correct guess!";
         document.querySelector('.number').textContent = secretNum;
