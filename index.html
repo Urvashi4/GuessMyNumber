@@ -11,26 +11,49 @@
 
 <body>
     <header>
-        <h1>Guess My Number!</h1>
-        <button class="btn again">Play Again!</button>
-        <p class="between">(Between 1 and 20)</p>
-        <div class="number">?</div>
+        <section class="headContent">
+            <button class="btn again">Play Again!</button>
+            <p class="between">(Between 1 and 20)</p>
+        </section>
+        <section class="heading">
+            <h1>Guess My Number!</h1>
+            <div class="number">?</div>
+        </section>
     </header>
-
-
     <main>
         <section class="left">
-            <input type="number" class="guess" />
+            <input type="number" class="guess" placeholder="Type a number...." onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Type a number....'" />
             <button class="btn check">Check!</button>
         </section>
         <section class="right">
-            <p class="message">Start guessing...</p>
-            <p class="label-score">Current Score - <span class="score">20</span></p>
+            <p class="message">💡 Start guessing...</p>
+            <p class="label-score">💯 Current Score - <span class="score">20</span></p>
             <p class="label-highscore">
-                Highscore - <span class="highscore">0</span>
+                😎 Highscore - <span class="highscore">0</span>
             </p>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-heading">Connect me socially at</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/Urvashi4">
+                    <img class="footer-img" src="images/github-logo.svg" />
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/Urvashimalik6">
+                    <img class="footer-img" src="images/twitter.svg" />
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://linkedin.com/in/urvashi-malik-r14ec181">
+                    <img class="footer-img" src="images/linkedin-logo.svg" />
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 
