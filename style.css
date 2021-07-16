@@ -129,3 +129,8 @@ h1 {
     display: inline;
     padding: 0rem 0.5rem;
 }
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
